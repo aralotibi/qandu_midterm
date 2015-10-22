@@ -4,5 +4,6 @@ from .views import *
 urlpatterns = patterns('',
   url(r'^$', Home.as_view(), name='home'),
   url(r'^Message/create/$', MessageCreateView.as_view(), name='Message_create'),
+  url(r'^success/$', Success.as_view(), name='success'),
 
 )
